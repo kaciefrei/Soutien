@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cours de soutien</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="video_script.js" defer></script>
+  <script src="cours_script.js" defer></script>
+  <!-- Ajout des styles Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color: #ffffff; color: #6c757d;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Cours de soutien</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="eleve.html">Accès élèves</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="prof.html">Accès professeurs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <div class="container mt-4">
+    <!-- Formulaire de dépôt de vidéos -->
+    <h2 style="color: #6f42c1;">Déposer une vidéo</h2>
+    <form id="videoForm">
+      <div class="mb-3">
+        <label for="videoLink" style="color: #6f42c1;">Lien de la vidéo :</label>
+        <input type="text" id="videoLink" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="videoTitle" style="color: #6f42c1;">Titre de la vidéo :</label>
+        <input type="text" id="videoTitle" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="videoSubject" style="color: #6f42c1;">Matière :</label>
+        <input type="text" id="videoSubject" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Publier</button>
+
+    </form>
+
+    <!-- Liste des vidéos déjà déposées -->
+    <h2 style="color: #6f42c1;">Vidéos déposées</h2>
+    <div id="latestVideos">
+      <!-- Contenu des dernières vidéos -->
+    </div>
+  </div>
+
+  <footer class="bg-light">
+    <div class="container py-4">
+        <div class="text-center">
+            <p>Oscar Bouaouli - Projet - INSA CVL Blois</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
